@@ -1,0 +1,63 @@
+# EasyLanguage Compiler
+
+Este é um projeto de compilador desenvolvido em Java utilizando a ferramenta ANTLR (Another Tool for Language Recognition), com suporte à linguagem fictícia EasyLanguage. Ele realiza análise léxica, sintática e semântica de programas escritos nessa linguagem, gerando uma representação intermediária baseada em comandos.
+
+## 📚 Funcionalidades
+
+- Análise léxica e sintática com ANTLR.
+- Verificação semântica de variáveis e tipos.
+
+## 🛠 Tecnologias
+
+- Java 8+
+- Maven
+- ANTLR 4.12.0
+
+## ▶️ Como Executar
+
+### 1. Requisitos
+
+- Java JDK 8 ou superior
+- Maven
+- ANTLR 4.12.0 (já incluído em `resources/`)
+
+### 2. Compilação
+
+No terminal, dentro do diretório `EasyLanguageFinal`, execute:
+
+```bash
+mvn clean install
+```
+
+### 3. Execução
+
+Para rodar o programa principal que interpreta um arquivo `.easy`:
+
+```bash
+java -cp target/EasyLanguageFinal-1.0-SNAPSHOT.jar br.edu.cefsa.compiler.main.MainClass
+```
+
+Você pode modificar o arquivo de entrada em `resources/input.easy`.
+
+## 🧪 Exemplo de Código EasyLanguage
+
+```easy
+programa
+
+  numero a, b, c;
+  texto  teste;
+  b = 2;
+  c = b;
+  a = 1 + 2 * 3 / b ^ 5 + c;
+  
+fimprog;
+```
+
+## 📌 Observações
+
+- O projeto foi desenvolvido como parte de um trabalho acadêmico.
+- A linguagem EasyLanguage é fictícia e criada para fins didáticos.
+
+## 📄 Licença
+
+Este projeto é de uso educacional e pode ser reutilizado com os devidos créditos.
