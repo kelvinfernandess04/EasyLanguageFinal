@@ -1,0 +1,9 @@
+programa
+
+  numero a, b, c;
+  texto  teste;
+  b = 2;
+  c = b;
+  a = 1 + 2 * 3 / b ^ 5 + c;
+  
+fimprog;
